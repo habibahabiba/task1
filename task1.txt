@@ -1,0 +1,62 @@
+First Task :
+Write an algorithm that read a sentence, which ends with a point,, character by character to determine:
+
+The number of words in the sentence (assuming that the words are separated by a single space).
+The number of vowels in the sentence.
+You have to keep in mind that:
+
+Each character will be treated separately.
+
+The last character is the point.
+
+Use three variables as counters.
+
+----------------
+----------------
+    ALGORITHM READ A SENTENCE
+    
+    VAR
+     i:= INTEGER ;
+     nbw:= INTEGER ;
+     nbv:= INTEGER ;
+     sentc:= STRING[] ;
+
+BEGIN
+
+   i:= 0 ;
+
+  nbw:= 1 ;
+
+  nbv:= 0;
+
+  write("type the sentence")
+
+  read(sentc)
+
+REPEAT
+
+   
+
+   IF (sentc[i]=" ") THEN
+
+       nbw:=nbw+1 ;
+
+   END_IF
+
+  IF (sentc[i] in ["a","e","u","i","o","y"]) THEN
+
+   nbv:= nbv+1 ;
+
+   END_IF
+
+   nbc := nbc+1 ;
+
+UNTIL (sentc[i]=".")
+
+write( "le nombre de caractere est ",i+1 )
+
+write (" le nombre de mot est ",nbw)
+
+write (" le nombre de voyelle est ",nbv)
+
+END
